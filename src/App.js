@@ -10,18 +10,17 @@ function App() {
       <Layout>
           <Header className="header-color" title="Eric D. Hansen" scroll>
               <Navigation>
-                  <Link to="/">Homepage</Link>
-                  <Link to="/about">About Me</Link>
-                  <Link to="/projects">Projects</Link>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/EHWebsite/about">About Me</Link>
+                  <Link to="/EHWebsite/projects">Projects</Link>
+                  <Link to="/EHWebsite/contact">Contact</Link>
               </Navigation>
           </Header>
           <Drawer title="Eric D. Hansen">
               <Navigation>
-              <Link to="/">Homepage</Link>
-                  <Link to="/about">About Me</Link>
-                  <Link to="/projects">Projects</Link>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/EHWebsite/">Homepage</Link>
+                  <Link to="/EHWebsite/about">About Me</Link>
+                  <Link to="/EHWebsite/projects">Projects</Link>
+                  <Link to="/EHWebsite/contact">Contact</Link>
               </Navigation>
           </Drawer>
           <Content className="body-color">

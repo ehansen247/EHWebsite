@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/EHWebsite/static/css/main.2f5bc626.chunk.css",
+    "main.js": "/EHWebsite/static/js/main.fede6423.chunk.js",
+    "main.js.map": "/EHWebsite/static/js/main.fede6423.chunk.js.map",
+    "runtime~main.js": "/EHWebsite/static/js/runtime~main.dc29fdef.js",
+    "runtime~main.js.map": "/EHWebsite/static/js/runtime~main.dc29fdef.js.map",
+    "static/css/2.60a6b8e0.chunk.css": "/EHWebsite/static/css/2.60a6b8e0.chunk.css",
+    "static/js/2.bfff7785.chunk.js": "/EHWebsite/static/js/2.bfff7785.chunk.js",
+    "static/js/2.bfff7785.chunk.js.map": "/EHWebsite/static/js/2.bfff7785.chunk.js.map",
+    "index.html": "/EHWebsite/index.html",
+    "precache-manifest.26f68ee6f5c36331d85f7047ad50fc71.js": "/EHWebsite/precache-manifest.26f68ee6f5c36331d85f7047ad50fc71.js",
+    "service-worker.js": "/EHWebsite/service-worker.js",
+    "static/css/2.60a6b8e0.chunk.css.map": "/EHWebsite/static/css/2.60a6b8e0.chunk.css.map",
+    "static/css/main.2f5bc626.chunk.css.map": "/EHWebsite/static/css/main.2f5bc626.chunk.css.map",
+    "static/media/maleavatar.jpg": "/EHWebsite/static/media/maleavatar.30cf03b5.jpg"
+  }
+}

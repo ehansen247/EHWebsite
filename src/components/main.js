@@ -7,10 +7,10 @@ import { Switch, Route } from 'react-router-dom';
 
 const Main = () => (
     <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/projects" component={Projects} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/EHWebsite/" component={Homepage} />
+        <Route exact path="/EHWebsite/about" component={About} />
+        <Route exact path="/EHWebsite/projects" component={Projects} />
+        <Route exact path="/EHWebsite/contact" component={Contact} />
      </Switch>
 )
 
