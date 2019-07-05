@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 
 const Main = () => (
     <Switch>
+        <Route exact path="/" component={Homepage} /> {/* Need to display homepage on both localhost and github pages*/}
         <Route exact path="/EHWebsite/" component={Homepage} />
         <Route exact path="/EHWebsite/about" component={About} />
         <Route exact path="/EHWebsite/projects" component={Projects} />

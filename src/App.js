@@ -10,6 +10,7 @@ function App() {
       <Layout>
           <Header className="header-color" title="Eric D. Hansen" scroll>
               <Navigation>
+                  <Link to="/EHWebsite/">Homepage</Link>
                   <Link to="/EHWebsite/about">About Me</Link>
                   <Link to="/EHWebsite/projects">Projects</Link>
                   <Link to="/EHWebsite/contact">Contact</Link>
