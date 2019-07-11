@@ -13,7 +13,8 @@ class Projects extends Component {
 
         // Tabs by Projects
         this.projectGrid = [
-            ["https://ehansen247.github.io/ReactGames/"]
+            ["https://ehansen247.github.io/ReactGames/", 
+            "https://ehansen247.github.io/ReactGames/ticTacToe.html"]
         ]
     }
 
@@ -49,6 +50,7 @@ class Projects extends Component {
             return this.toggleTabs();
         }
         else {
+            const link = this.projectGrid[this.state.activeTab][this.state.projNum];
             return (
                 <div style={{margin: "20px"}}>
                     <div class="banner-background" style={{maxWidth: "600px", paddingTop: "20px"}}>
@@ -57,7 +59,7 @@ class Projects extends Component {
                             <p style={{fontSize: "15px"}}>&nbsp;Back to Projects &emsp; &emsp;|&emsp; &emsp;Open in Github Pages&nbsp;</p>
                         </span>
                         <span style={{display: "inline-block"}}>
-                            <a href="https://ehansen247.github.io/ReactGames/">
+                            <a href={link}>
                                 <button>&#62;</button>
                             </a>
                         </span>
@@ -66,7 +68,7 @@ class Projects extends Component {
                     <hr/>
                     <div style={{textAlign: "center"}}>
                         <iframe height="670px" width="800px"
-                        src={this.projectGrid[this.state.activeTab][this.state.projNum]} 
+                        src={link}
                         style={{background: "white"}}></iframe>
                     </div>
                 </div>
@@ -90,7 +92,7 @@ class Projects extends Component {
                             Play Connect4 online against a friend!
                         </CardText>
                         <CardActions class="card-action" border>
-                            <Button colored onClick={() =>this.setState({liveDemo: true})}>LiveDemo</Button>
+                            <Button colored onClick={() =>this.setState({liveDemo: true, projNum: 0})}>LiveDemo</Button>
                             <Button colored href="https://github.com/ehansen247/ReactGames">GitHub</Button>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
@@ -105,8 +107,8 @@ class Projects extends Component {
                             Play TicTacToe against a friend or take on the computer!
                         </CardText>
                         <CardActions class="card-action" border>
-                            <Button colored onClick={() =>this.setState({liveDemo: true})}>LiveDemo</Button>
-                            <Button colored href="https://github.com/ehansen247/ReactGames/ticTacToe.html">GitHub</Button>
+                            <Button colored onClick={() =>this.setState({liveDemo: true, projNum: 1})}>LiveDemo</Button>
+                            <Button colored href="https://github.com/ehansen247/ReactGames">GitHub</Button>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
                             <IconButton onClick={this.triggerShare} name="share" />
@@ -127,7 +129,7 @@ class Projects extends Component {
                             Fully functional, graphics-based Chess program. Play against a friend!
                         </CardText>
                         <CardActions class="card-action" border>
-                            <Button colored>LiveDemo</Button>
+                            {/* <Button colored>LiveDemo</Button> */}
                             <Button colored href="https://github.com/ehansen247/JavaChessGame">GitHub</Button>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
@@ -148,7 +150,7 @@ class Projects extends Component {
                             Buy and Sell Virtual Stocks!
                         </CardText>
                         <CardActions class="card-action" border>
-                            <Button colored>LiveDemo</Button>
+                            {/* <Button colored>LiveDemo</Button> */}
                             <Button colored href="https://github.com/ehansen247/CS50Finance">GitHub</Button>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
@@ -169,7 +171,7 @@ class Projects extends Component {
                             Generate random quotes from a database of over 4,000! 
                         </CardText>
                         <CardActions class="card-action" border>
-                            <Button colored>LiveDemo</Button>
+                            {/* <Button colored>LiveDemo</Button> */}
                             <Button colored href="https://github.com/ehansen247/Inspire">GitHub</Button>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
