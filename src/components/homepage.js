@@ -20,7 +20,7 @@ class Homepage extends Component {
 
                         <hr></hr>
 
-                        <h4>Python | Java | HTML/CSS | React | SQL | OCaml </h4>
+                        <h4>Python | Java | JavaScript | HTML/CSS | SQL | OCaml </h4>
 
                         <div className="social-links">
 
