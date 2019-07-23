@@ -23,7 +23,7 @@ class Projects extends Component {
             <div className="tabs">
                 <Tabs activeTab={this.state.activeTab} 
                       onChange={(tabId) => this.setState({activeTab: tabId, liveDemo: false})} ripple>
-                    <Tab>React</Tab>
+                    <Tab>JavaScript</Tab>
                     <Tab>Java</Tab>
                     <Tab>Python</Tab>
                     <Tab>SQL</Tab>
@@ -84,6 +84,21 @@ class Projects extends Component {
         {
             disp = 
                 <div style={{display: "flex"}}>
+                    <Card shadow={20} style={{width: "300px", margin: "40px"}}>
+                        <CardTitle expand border style={{height: "150px", background: "teal bottom left 15%"}}>
+                            <h3 style={{marginTop: "120px", fontWeight: "bold"}}>Inspire</h3>
+                        </CardTitle>
+                        <CardText >
+                            Generate random quotes from a database of over 4,000! 
+                        </CardText>
+                        <CardActions class="card-action" border>
+                            {/* <Button colored>LiveDemo</Button> */}
+                            <Button colored href="https://github.com/ehansen247/Inspire">GitHub</Button>
+                        </CardActions>
+                        <CardMenu style={{color:"#fff"}}>
+                            <IconButton onClick={this.triggerShare} name="share" />
+                        </CardMenu>
+                    </Card>
                     <Card shadow={20} style={{width: "300px", margin: "40px"}}>
                         <CardTitle expand border style={{height: "150px", background: "teal bottom left 15%"}}>
                             <h3 style={{marginTop: "120px", fontWeight: "bold"}}>Connect Four</h3>
@@ -164,20 +179,20 @@ class Projects extends Component {
             disp = 
             <div style={{display: "flex"}}>
                 <Card shadow={20} style={{width: "300px", margin: "40px"}}>
-                        <CardTitle expand border style={{height: "150px", background: "teal bottom left 15%"}}>
-                            <h3 style={{marginTop: "120px", fontWeight: "bold"}}>Inspire</h3>
-                        </CardTitle>
-                        <CardText >
-                            Generate random quotes from a database of over 4,000! 
-                        </CardText>
-                        <CardActions class="card-action" border>
-                            {/* <Button colored>LiveDemo</Button> */}
-                            <Button colored href="https://github.com/ehansen247/Inspire">GitHub</Button>
-                        </CardActions>
-                        <CardMenu style={{color:"#fff"}}>
-                            <IconButton onClick={this.triggerShare} name="share" />
-                        </CardMenu>
-                    </Card>
+                    <CardTitle expand border style={{height: "150px", background: "teal bottom left 15%"}}>
+                        <h3 style={{marginTop: "120px", fontWeight: "bold"}}>Inspire</h3>
+                    </CardTitle>
+                    <CardText >
+                        Generate random quotes from a database of over 4,000! 
+                    </CardText>
+                    <CardActions class="card-action" border>
+                        {/* <Button colored>LiveDemo</Button> */}
+                        <Button colored href="https://github.com/ehansen247/Inspire">GitHub</Button>
+                    </CardActions>
+                    <CardMenu style={{color:"#fff"}}>
+                        <IconButton onClick={this.triggerShare} name="share" />
+                    </CardMenu>
+                </Card>
             </div>
         }
         return disp;
